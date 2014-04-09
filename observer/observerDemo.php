@@ -4,7 +4,7 @@ namespace observer;
 include '../init.php';
 
 $subject = new MySubject();
-$observer = new MyObserver();
+$observer = new MyObserver($subject);
 
 $subject->registerObserver($observer);
 
